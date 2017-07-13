@@ -1,1 +1,7 @@
-<p>Tasks</p>
+<% for task in @tasks %>
+    <h1>------------------------------</h1>
+    <h1>Name: <%= task.name%></h1>
+    <h1>Description: <%= task.description%></h1>
+    <h1>Priority: <%= task.priority%></h1>
+    <h1>------------------------------</h1>
+<% end %>

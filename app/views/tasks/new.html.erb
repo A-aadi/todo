@@ -1,12 +1,17 @@
-<%= form_for :task, url: {action: "create"}, do |f| %>
+<%= form_for @task do |f| %>
     <p>
-      <%= f.label :title %><br>
-      <%= f.text_field :title %>
+      <%= f.label :name %><br>
+      <%= f.text_field :name %>
     </p>
 
     <p>
-      <%= f.label :text %><br>
-      <%= f.text_area :text %>
+      <%= f.label :description %><br>
+      <%= f.text_area :description %>
+    </p>
+
+    <p>
+      <%= f.label :priority %><br>
+      <%= f.text_area :priority %>
     </p>
 
     <p>
